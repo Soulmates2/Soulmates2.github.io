@@ -1,2 +1,2 @@
 # Soulmates2.github.io
-blog
+[blog](Soulmates2.github.io)
