@@ -1,2 +1,2 @@
-# Soulmates.github.io
+# Soulmates2.github.io
 blog
