@@ -111,7 +111,8 @@ a {
 	-ms-transition: color .2s ease-in-out;
 	transition: color .2s ease-in-out;
 	color: #43B3E0;
-	text-decoration: underline;
+	/* text-decoration: underline; */
+	text-decoration: none
 }
 
 	a:hover {
@@ -121,6 +122,17 @@ a {
 	a img {
 		border: 0;
 	}
+
+a_no {
+	-moz-transition: color .2s ease-in-out;
+	-webkit-transition: color .2s ease-in-out;
+	-ms-transition: color .2s ease-in-out;
+	transition: color .2s ease-in-out;
+	color: #000000;
+	/* text-decoration: underline; */
+	text-decoration: none
+}
+
 
 b, strong {
 	font-weight: 600;
