@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="OptCtrlPoints: Finding the Optimal Control Points for Biharmonic 3D Shape Deformation.">
+  <meta name="keywords" content="OptCtrlPoints, Deformation, Biharmonic Coordinates">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <title>OptCtrlPoints: Finding the Optimal Control Points for Biharmonic 3D Shape Deformation</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">OptCtrlPoints: Finding the Optimal Control Points for Biharmonic 3D Shape Deformation</h1>
+          <div style="font-size:x-large;">Pacific Graphics 2023 (Full Paper)</div><br>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://Soulmates2.github.io/CV">Kunho Kim</a>*,</span>
+            <span class="author-block">
+              <a href="https://mikacuy.github.io/">Mikaela Angelina Uy</a>*,</span>
+            <span class="author-block">
+              <a href="https://paschalidoud.github.io/">Despoina Paschalidou</a>,</span>
+            <span class="author-block">
+              <a href="https://www.cs.toronto.edu/~jacobson/">Alec Jacobson</a>,</span>
+            <span class="author-block">
+              <a href="https://geometry.stanford.edu/member/guibas/">Leonidas Guibas</a>,</span>
+            <span class="author-block">
+              <a href="https://mhsung.github.io/">Minhyuk Sung</a></span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">KAIST</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="static/OptCtrlPoints_Main.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2309.12899"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://Soulmates2.github.io/publications/OptCtrlPoints"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (Coming Soon!)</span>
+                  </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="container">
+  <div class="content is-max-desktop">
+    <img src="static/images/Representative.png">
+    <p>
+      <span class="dnerf">OptCtrlPoints</span>, a data-driven method to search for the optimal set of control points, enables accurate replication of the possible variations
+      of a shape through biharmonic deformation. In contrast to control points obtained through Farthest Point Sampling, the control points discovered by
+      OPTCTRLPOINTS are strategically positioned, such as at the knees (see the red arrows in the black boxes), resulting in a superior fit of the template to the
+      targets during deformation.
+    </p>
+  </div>
+</div>
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <!-- <div class="columns is-centered has-text-centered"> -->
+    <div class="columns is-centered has-text-centered is-flex-direction-column">
+      <!-- <div class="column is-four-fifths"> -->
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We propose <span class="dnerf">OptCtrlPoints</span>, a data-driven framework designed to identify the optimal sparse set of control points for
+            reproducing target shapes using biharmonic 3D shape deformation. Control-point-based 3D deformation methods are widely
+            utilized for interactive shape editing, and their usability is enhanced when the control points are sparse yet strategically
+            distributed across the shape. With this objective in mind, we introduce a data-driven approach that can determine the most
+            suitable set of control points, assuming that we have a given set of possible shape variations. The challenges associated with this
+            task primarily stem from the computationally demanding nature of the problem. Two main factors contribute to this complexity:
+            solving a large linear system for the biharmonic weight computation and addressing the combinatorial problem of finding the
+            optimal subset of mesh vertices. To overcome these challenges, we propose a reformulation of the biharmonic computation that
+            reduces the matrix size, making it dependent on the number of control points rather than the number of vertices. Additionally,
+            we present an efficient search algorithm that significantly reduces the time complexity while still delivering a nearly optimal
+            solution. Experiments on SMPL, SMAL, and DeformingThings4D datasets demonstrate the efficacy of our method. Our control
+            points achieve better template-to-target fit than FPS, random search, and neural-network-based prediction. We also highlight the
+            significant reduction in computation time from days to approximately 3 minutes.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section><hr>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- <div class="column is-four-fifths"></div> -->
+      <!-- Main Idea. -->
+    <div class="columns is-centered has-text-centered is-flex-direction-column">
+      <h2 class="title is-3">Main Idea</h2>
+      <div class="container">
+        <img src="" alt="Framework" style="max-width:80%;">
+      </div>
+      <div class="content has-text-justified">
+        <p>
+          To be updated.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!--/ Main Idea. -->
+</section><hr>
+
+
+
+<section class="hero teaser">
+  <!--/ SMPL SMAL. -->
+  <div class="columns is-centered has-text-centered is-flex-direction-column"><br>
+    <h2 class="title is-3">Qualitative Comparisons on the SMPL and SMAL</h2>
+  </div>
+  <div class="container is-max-desktop">
+    <p>
+      <span class="dnerf">OptCtrlPoints</span> can find the <b>optimal set of control points</b> that enables to deform template shape with high quality.
+      We show each method’s output control points, the corresponding <b>deformed template (white)</b>
+      overlayed over the <b>desired target (yellow)</b> to illustrate the alignment of the deformed source to the target shapes using the output control points.
+      We also show the raw output deformed source shape colored with <b>vertex-to-vertex alignment to target error map</b> for visualization
+    </p>
+  </div>
+  <div class="columns is-centered has-text-centered is-flex-direction-column">
+    <div class="container" style="width:80%;">
+      <img src="./static/images/Figure3.png" alt="SMPL SMAL" style="max-width:85%;">
+      <h2 class="subtitle has-text-centered">
+        
+      </h2>
+    </div>
+  </div>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <!--/ SMPL SMAL. -->
+</section><br><br><hr>
+
+
+<section class="hero teaser">
+  <!--/ DeformingThings4D. -->
+  <div class="columns is-centered has-text-centered is-flex-direction-column"><br>
+    <h2 class="title is-3">Qualitative Comparisons on the SMPL and SMAL</h2>
+  </div>
+  <div class="container is-max-desktop">
+    <p>
+      we highlight the effectiveness of our <span class="dnerf">OptCtrlPoints</span> in discovering the optimal
+      set of control points for a given set of targets in a data-driven manner.
+      We present two distinct experimental setups: <b>per-category</b> and <b>per-motion</b>. 
+      We randomly sample <b>1000 different targets from all motions for the per-category</b> experiments, 
+      while we use <b>all the frames of the motion as targets for the per-motion</b> experiment.
+    </p>
+  </div>
+  <div class="columns is-centered has-text-centered is-flex-direction-column">
+    <div class="container" style="width:80%;">
+      <img src="./static/images/Figure4.png" alt="SMPL SMAL" style="max-width:85%;">
+      <h2 class="subtitle has-text-centered">
+        
+      </h2>
+    </div>
+  </div>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <!--/ DeformingThings4D. -->
+</section><hr>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Citation</h2>
+    <pre><code>
+    @article{kim2023optctrlpoints,
+      title={OptCtrlPoints: Finding the Optimal Control Points for Biharmonic 3D Shape Deformation}, 
+      author={Kunho Kim and Mikaela Angelina Uy and Despoina Paschalidou and Alec Jacobson and Leonidas J. Guibas and Minhyuk Sung},
+      journal={arXiv preprint arXiv:2309.12899},
+      year={2023},
+    }
+    </code></pre>
+  </div>
+</section><hr>
+
+<section class="section">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Acknowledgements</h2>
+    Special thanks to <a href="https://jyunlee.github.io/">Jihyun Lee</a> for helping us with the basic experiment.
+    This work was partly supported by NRF grant (RS-2023-00209723) and IITP grant (2022-0-00594, RS-2023-00227592) funded by the Korean government (MSIT), Technology
+    Innovation Program (20016615) funded by the Korea government(MOTIE), and grants from ETRI, KT, NCSOFT, and Samsung
+    Electronics. Leonidas Guibas acknowledges support from an ARL grant W911NF-21-2-0104, a Vannevar Bush Faculty Fellowship, and
+    gifts from the Adobe and Snap corporations. Despoina Paschalidou acknowledges support from the Swiss National Science Foundation
+    under grant number P500PT 206946. 
+  </div>
+</section>
+
+<script src="static/js/script.js"></script>
+<script>
+  new BeforeAfter({
+    id: "#example1"
+  });
+  new BeforeAfter({
+    id: "#example2"
+  });
+  new BeforeAfter({
+    id: "#example3"
+  });
+  new BeforeAfter({
+    id: "#example5"
+  });
+  new BeforeAfter({
+    id: "#example6"
+  });
+  new BeforeAfter({
+    id: "#example7"
+  });
+  new BeforeAfter({
+    id: "#example8"
+  });
+  new BeforeAfter({
+    id: "#example9"
+  });
+  new BeforeAfter({
+    id: "#example10"
+  });
+  new BeforeAfter({
+    id: "#example11"
+  });
+  new BeforeAfter({
+    id: "#example12"
+  });
+  new BeforeAfter({
+    id: "#example13"
+  });
+  new BeforeAfter({
+    id: "#example14"
+  });
+  new BeforeAfter({
+    id: "#example15"
+  });
+  new BeforeAfter({
+    id: "#example16"
+  });
+</script>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="./static/videos/nerfies_paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            The website is based on <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>. We thank 
+            <a href="https://keunhong.com/">Keunhong Park</a> for kindly open-sourcing the source code.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
