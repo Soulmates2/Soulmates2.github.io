@@ -40,6 +40,14 @@
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
+
+  <!-- for LaTeX format -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({            
+        tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}            
+    });
+  </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
 </head>
 <body>
 
@@ -115,10 +123,11 @@
   <div class="content is-max-desktop">
     <img src="static/images/Representative.png">
     <p>
-      <span class="dnerf">OptCtrlPoints</span>, a data-driven method to search for the optimal set of control points, enables accurate replication of the possible variations
-      of a shape through biharmonic deformation. In contrast to control points obtained through Farthest Point Sampling, the control points discovered by
-      OPTCTRLPOINTS are strategically positioned, such as at the knees (see the red arrows in the black boxes), resulting in a superior fit of the template to the
-      targets during deformation.
+      <b><span class="dnerf">OptCtrlPoints</span>, a data-driven method to search for the optimal set of control points</b>, 
+      enables accurate replication of the possible variations of a shape through biharmonic deformation. 
+      In contrast to control points obtained through Farthest Point Sampling, the control points discovered by
+      <span class="dnerf">OptCtrlPoints</span> are strategically positioned, such as at the knees (see the red arrows in the black boxes), 
+      resulting in a superior fit of the template to the targets during deformation.
     </p>
   </div>
 </div>
@@ -151,29 +160,91 @@
         </div>
       </div>
     </div>
+    <div class="container">
+      <div class="content has-text-centered">
+        <img src="./static/images/our_approach.gif" alt="our_approach" style="max-width:100%;">
+      </div>
+    </div>
     <!--/ Abstract. -->
   </div>
 </section><hr>
 
+
 <section class="section">
   <div class="container is-max-desktop">
     <!-- <div class="column is-four-fifths"></div> -->
-      <!-- Main Idea. -->
+    <!-- Reformulation. -->
     <div class="columns is-centered has-text-centered is-flex-direction-column">
-      <h2 class="title is-3">Main Idea</h2>
-      <div class="container">
-        <img src="" alt="Framework" style="max-width:80%;">
-      </div>
+      <h2 class="title is-3">Reformulation of Biharmonic Weight</h2>
+      <br>
+      <img src="./static/images/Reformulation.png" alt="reformulation" style="max-width:100%;">
+      <br>
       <div class="content has-text-justified">
         <p>
-          To be updated.
+          Biharmonic coordinates is defined as the closed-form formulation of this optimization, namely $V = WC$. 
+          Here, $W$ called biharmonic weights is derived from the solution of the optimization.
+          When the control points and resulting biharmonic weights are fixed, we calculate biharmonic weight only once.
+          However, when computing deformations with different sets of control points, it is not feasible to leverage 
+          the prefactorization since the complementary selector matrix $T$ varies. 
+          That means, <b>we need to calculate the prefactorization multiple times</b>.
+          Here, $TAT^{\top}$ is too large matrix to calculate its prefactorization multiple times.          
+        </p>
+        <p>
+          To address this challenge, we introduce a reformulation of biharmonic weight that yields 
+          the same biharmonic weight matrix $W(S;A)$ while solving a linear system on a much smaller scale.
         </p>
       </div>
     </div>
   </div>
-  <!--/ Main Idea. -->
+  <!--/ Reformulation. -->
+</section>
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- <div class="column is-four-fifths"></div> -->
+      <!-- Algorithm. -->
+    <div class="columns is-centered has-text-centered is-flex-direction-column">
+      <h2 class="title is-3">Level-of-Detail Search Algorithm</h2>
+      <div class="container">
+        <div class="content has-text-centered">
+          <video id="vid_algorithm" controls autoplay muted loop style="max-width: 100%;">
+            <source src="static/images/Algorithm.mp4">
+          </video>
+        </div>
+      </div>
+      <div class="content has-text-justified">
+        <p>
+          <span class="dnerf">OptCtrlPoints</span> iteratively refines a set of control points starting from an initial configuration. 
+          First, establish $K$ partitions of the mesh by conducting a nearest neighbor mapping of all vertices to seed points, using the distance over the volume mesh graph as a measure of proximity.
+        </p>
+        <p>
+          <b>In the first stage</b>, we determine the partition to which the $k_{th}$ control point will move. 
+          We select the one of the sampled vertices that provides the minimum sum of distances between the template mesh and 
+          all the target shapes after deformation when substituting the current $k_{th}$ control point.
+          By finding the vertex with the minimum sum of fitting distances, we identify the corresponding partitioned region for further exploration.
+          After first stage, we have the best partition $l$ among $K$ partitions. The time complexity of this first stage is $O(K^2)$.
+        </p>
+        <p>
+          <b>In the second stage</b>, within the selected region $l$, we find the best vertex, similar to the first stage.
+          We calculate the fitting error when substituting the current $k_{th}$ control point and select the one that minimizes the fitting error.
+          The vertex selected during this step becomes the new $k_{th}$ control point for the subsequent iteration. 
+          Assuming an even partitioning of the template mesh with an equal number of vertices in each region, 
+          the average time complexity of this second stage is $O(N)$.
+        </p>
+        <p>
+          Therefore, the whole time complexity of <span class="dnerf">OptCtrlPoints</span> is $O(N+K^2)$. Our algorithm significantly reduces the computation time 
+          compared to the exhaustive search complexity of $O(N^K)$.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!--/ Algorithm. -->
 </section><hr>
 
+
+
+<script>
+   document.getElementById('vid_algorithm').play();
+</script>
 
 
 <section class="hero teaser">
