@@ -51,13 +51,15 @@
 </head>
 <body>
 
+
+<!-- ========== Title ========== -->
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">OptCtrlPoints: Finding the Optimal Control Points for Biharmonic 3D Shape Deformation</h1>
-          <div style="font-size:x-large;">Pacific Graphics 2023 (Full Paper)</div><br>
+          <div style="font-size:x-large;">Computer Graphics Forum (Proc. <b>Pacific Graphics 2023</b>)</div><br>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://Soulmates2.github.io/CV">Kunho Kim</a><sup>1</sup>*,</span>
@@ -119,6 +121,7 @@
 </section>
 
 
+<!-- ========== Teaser ========== -->
 <div class="container">
   <div class="content is-max-desktop">
     <img src="static/images/Representative.png">
@@ -133,13 +136,10 @@
 </div>
 
 
-
+<!-- ========== Abstract ========== -->
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <!-- <div class="columns is-centered has-text-centered"> -->
     <div class="columns is-centered has-text-centered is-flex-direction-column">
-      <!-- <div class="column is-four-fifths"> -->
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
@@ -165,15 +165,13 @@
         <img src="./static/images/our_approach.gif" alt="our_approach" style="max-width:100%;">
       </div>
     </div>
-    <!--/ Abstract. -->
   </div>
 </section><hr>
 
 
+<!-- ========== Reformulation ========== -->
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- <div class="column is-four-fifths"></div> -->
-    <!-- Reformulation. -->
     <div class="columns is-centered has-text-centered is-flex-direction-column">
       <h2 class="title is-3">Reformulation of Biharmonic Weight</h2>
       <br>
@@ -196,12 +194,12 @@
       </div>
     </div>
   </div>
-  <!--/ Reformulation. -->
 </section>
+
+
+<!-- ========== Algorithm ========== -->
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- <div class="column is-four-fifths"></div> -->
-      <!-- Algorithm. -->
     <div class="columns is-centered has-text-centered is-flex-direction-column">
       <h2 class="title is-3">Level-of-Detail Search Algorithm</h2>
       <div class="container">
@@ -237,18 +235,16 @@
       </div>
     </div>
   </div>
-  <!--/ Algorithm. -->
 </section><hr>
-
-
 
 <script>
    document.getElementById('vid_algorithm').play();
 </script>
 
 
+
+<!-- ========== SMPL & SMAL ========== -->
 <section class="hero teaser">
-  <!--/ SMPL SMAL. -->
   <div class="columns is-centered has-text-centered is-flex-direction-column"><br>
     <h2 class="title is-3">Qualitative Comparisons on the SMPL and SMAL</h2>
   </div>
@@ -269,12 +265,11 @@
     </div>
   </div>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-  <!--/ SMPL SMAL. -->
 </section><br><br><hr>
 
 
+<!-- ========== DeformingThings4D ========== -->
 <section class="hero teaser">
-  <!--/ DeformingThings4D. -->
   <div class="columns is-centered has-text-centered is-flex-direction-column"><br>
     <h2 class="title is-3">Qualitative Comparisons on the DeformingThings4D</h2>
   </div>
@@ -296,23 +291,51 @@
     </div>
   </div>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-  <!--/ DeformingThings4D. -->
 </section><hr>
 
+
+<!-- ========== Video ========== -->
+<section class="hero teaser">
+  <div class="columns is-centered has-text-centered is-flex-direction-column"><br>
+    <h2 class="title is-3">Video</h2>
+  </div>
+  <div class="container is-max-desktop">
+    <p>
+    </p>
+  </div>
+  <div class="columns is-centered has-text-centered is-flex-direction-column">
+    <div class="container" style="width:80%;">
+      <h2 class="subtitle has-text-centered">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/5citPk0yRgM?si=ejPsy7mIhhRwfPD7" title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  
+      </h2>
+    </div>
+  </div>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+</section><hr>
+
+
+<!-- ========== BibTex ========== -->
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">Citation</h2>
     <pre><code>
-    @article{kim2023optctrlpoints,
-      title={OptCtrlPoints: Finding the Optimal Control Points for Biharmonic 3D Shape Deformation}, 
-      author={Kunho Kim and Mikaela Angelina Uy and Despoina Paschalidou and Alec Jacobson and Leonidas J. Guibas and Minhyuk Sung},
-      journal={arXiv preprint arXiv:2309.12899},
-      year={2023},
+    @article {kim2023optctrlpoints,
+      journal = {Computer Graphics Forum},
+      title = {{OptCtrlPoints: Finding the Optimal Control Points for Biharmonic 3D Shape Deformation}},
+      author = {Kim, Kunho and Uy, Mikaela Angelina and Paschalidou, Despoina and Jacobson, Alec and Guibas, Leonidas J. and Sung, Minhyuk},
+      year = {2023},
+      publisher = {The Eurographics Association and John Wiley & Sons Ltd.},
+      ISSN = {1467-8659},
+      DOI = {10.1111/cgf.14963}
     }
     </code></pre>
   </div>
 </section><hr>
 
+
+<!-- ========== Acknowledgements ========== -->
 <section class="section">
   <div class="container is-max-desktop content">
     <h2 class="title">Acknowledgements</h2>
@@ -374,6 +397,7 @@
   });
 </script>
 
+<!-- ========== footer ========== -->
 <footer class="footer">
   <div class="container">
     <div class="content has-text-centered">
