@@ -1,0 +1,49 @@
+papers:
+###################### SyncDiffusion ######################
+  - title: "SyncDiffusion: Coherent Montage via Synchronized Joint Diffusions"
+    shorts: "SyncDiffusion"
+    authors: "<a href='https://phillipinseoul.github.io/'>Yuseung Lee</a>, 
+              <b>Kunho Kim</b>, 
+              Hyunjin Kim, 
+              <a href='https://mhsung.github.io/'>Minhyuk Sung</a>"
+    venue: "Conference on Neural Information Processing Systems <b>(NeurIPS), 2023</b>"
+    img: "assets/publications/SyncDiffusion/teaser.png"
+    project: "https://syncdiffusion.github.io/"
+    paper_pdf: "https://arxiv.org/abs/2306.05178"
+    code: "https://github.com/KAIST-Geometric-AI-Group/SyncDiffusion"
+    selected: y
+    bib: "<br/>
+          @inproceedings{lee2023syncdiffusion,<br/>
+          title={SyncDiffusion: Coherent Montage via Synchronized Joint Diffusions},<br/>
+          author={Yuseung Lee and Kunho Kim and Hyunjin Kim and Minhyuk Sung},<br/>
+          booktitle={NeurIPS},<br/>
+          year={2023}<br/>
+        }"
+    
+###################### OptCtrlPoints ######################
+  - title: "OptCtrlPoints: Finding the Optimal Control Points for Biharmonic 3D Shape Deformation"
+    shorts: "OptCtrlPoints"
+    authors: "<b>Kunho Kim<sup>‡</sup></b>, 
+              <a href='https://mikacuy.github.io/'>Mikaela Angelina Uy<sup>‡</sup></a>, 
+              <a href='https://paschalidoud.github.io/'>Despoina Paschalidou</a>, 
+              <a href='https://www.cs.toronto.edu/~jacobson/'>Alec Jacobson</a>, 
+              <a href='https://geometry.stanford.edu/member/guibas/'>Leonidas Guibas</a>, 
+              <a href='https://mhsung.github.io/'>Minhyuk Sung</a>"
+    venue: "Computer Graphics Forum (Proc. <b>Pacific Graphics 2023</b>)"
+    img: "assets/publications/OptCtrlPoints/teaser.png"
+    project: "https://soulmates2.github.io/publications/OptCtrlPoints/"
+    paper_pdf: "https://arxiv.org/abs/2309.12899"
+    code: "https://github.com/Soulmates2/OptCtrlPoints"
+    slides: "https://soulmates2.github.io/publications/OptCtrlPoints/static/OptCtrlPoints_slides.pptx"
+    video: "https://www.youtube.com/watch?v=5citPk0yRgM"
+    selected: y
+    bib: "<br/>
+          @article {kim2023optctrlpoints,<br/>
+          journal = {Computer Graphics Forum},<br/>
+          title = {{OptCtrlPoints: Finding the Optimal Control Points for Biharmonic 3D Shape Deformation}},<br/>
+          author = {Kim, Kunho and Uy, Mikaela Angelina and Paschalidou, Despoina and Jacobson, Alec and Guibas, Leonidas J. and Sung, Minhyuk},<br/>
+          year = {2023},<br/>
+          publisher = {The Eurographics Association and John Wiley & Sons Ltd.},<br/>
+          ISSN = {1467-8659},<br/>
+          DOI = {10.1111/cgf.14963}<br/>
+          }"

@@ -1,0 +1,73 @@
+experiences:
+- place: "KAIST"
+  time: "2022 - now"
+  title: "M.S. Student"
+  subtitle: "KAIST Geometric AI Lab <br> (Advisor: Minhyuk Sung)"
+  category: "school"
+
+- place: "Mathpang"
+  time: "Aug 2021 - Jan 2022"
+  title: "ML Engineer"
+  subtitle: "TIPS government support task"
+  category: "work"
+
+- place: "Floatic"
+  time: "Aug 2021"
+  title: "Outsourcing"
+  subtitle: "3D modeling"
+  category: "work"
+
+- place: "KAIST"
+  time: "Sep 2020 - Dec 2020"
+  title: "Undergraduate Research Intern"
+  subtitle: "Urban Robotics Lab <br> (Advisor: Hyun Myung)"
+  category: "school"
+
+- place: "KAIST"
+  time: "Feb-Mar 2021"
+  title: "Outsourcing"
+  subtitle: "ICN Lab, Interactive software App"
+  category: "school"
+
+- place: "KAIST"
+  time: "Sep 2020 - Dec 2020"
+  title: "Industry-Academia Research Intern"
+  subtitle: "Text data visualization with entity linking"
+  category: "school"
+
+- place: "KI4AI"
+  time: "Sep 2020 - Dec 2020"
+  title: "Undergraduate Research Intern"
+  subtitle: "Study on Emotional TTS model using Tacotron"
+  category: "work"
+
+- place: "Kohyoung"
+  time: "Sep 2019 - Feb 2020"
+  title: "Machine Intelligence Team Intern"
+  subtitle: "Develop anomaly detection simulator"
+  category: "work"
+
+- place: "DHive"
+  time: "Jun 2019 - Jul 2020"
+  title: "Deep Learning Developer"
+  subtitle: "Startup"
+  category: "work"
+
+- place: "KAIST"
+  time: "Jun 2019 - Aug 2019"
+  title: "Undergraduate Research Intern"
+  subtitle: "Robot Intelligence Technology Lab <br> (Advisor: Jonghwan Kim)"
+  category: "school"
+
+- place: "KAIST"
+  time: "May-Aug 2019"
+  title: "Undergraduate Research Intern"
+  subtitle: "NMAIL <br> (Advisor: Byunghyung Kim)"
+  category: "school"
+
+- place: "KAIST"
+  time: "2017 - 2022"
+  title: "B.S. Student"
+  subtitle: "Electronical Engineering & Computer Science"
+  category: "school"
+

@@ -1,0 +1,42 @@
+projects:
+  - title: "Minimum"
+    subtitle: "Weight management diary App (iOS)"
+    thumbnail: "assets/projects/2021_minimum/thumbnail.png"
+    url: "projects/2021_minimum.html"
+    selected: y
+
+  - title: "MAMAGO"
+    subtitle: "Personalized English AI tutor (Web Chatbot)"
+    thumbnail: "assets/projects/2020_mamago/thumbnail.png"
+    url: "projects/2020_mamago.html"
+    selected: y
+
+  - title: "Fash"
+    subtitle: "Weather based AI style coordination recommendation App (Deep Learning, iOS)"
+    thumbnail: "assets/projects/2020_fash/thumbnail.png"
+    url: "projects/2020_fash.html"
+    selected: y
+
+  - title: "Creating Song Lyrics System"
+    subtitle: "Using Char-RNN model (Tensorflow, Python)"
+    thumbnail: "assets/projects/no_image.png"
+    url: "projects/2019_creating-song-lyrics.html"
+    selected: n
+  
+  - title: "Lego Racer"
+    subtitle: "Racing game (Unity, C#)"
+    thumbnail: "assets/projects/no_image.png"
+    url: "projects/2019_lego-racer.html"
+    selected: n
+  
+  - title: "Rhythm is life"
+    subtitle: "Rhythm game (Unity, C#)"
+    thumbnail: "assets/projects/2019_rhythm-is-life/thumbnail.png"
+    url: "projects/2019_rhythm-is-life.html"
+    selected: y
+
+  - title: "Live Text Editor App"
+    subtitle: "Using socket communication (Android, Java)"
+    thumbnail: "assets/projects/no_image.png"
+    url: "projects/2019_live-text-editor.html"
+    selected: n
