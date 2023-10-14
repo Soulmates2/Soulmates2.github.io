@@ -1,7 +1,7 @@
 # Kunho Kim's Website
 
 ## Website link
-Click [this](soulmates2.github.io)!
+Click [this](https://soulmates2.github.io)!
 
 ## Updates guide
 Change one of the files in `_data`, unless you are changing the look of the website.
