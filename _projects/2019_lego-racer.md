@@ -7,7 +7,7 @@ subtitle: "Racing game (Unity, C#)"
 
 **2018 Winter KAIST Mad Camp 4 week project**
 
-In this work, we develop a racing game called "Lego Racer". We used Unity (C#). [Gibhub link](https://github.com/Soulmates2/Madcampweek4)
+In this work, we develop a racing game called "Lego Racer". We used Unity (C#). [Gibhub](https://github.com/Soulmates2/Madcampweek4)
 <br/> &nbsp;&nbsp;&nbsp;&nbsp;
 
 **Short Demo Video (Coming Soon)** <br/>

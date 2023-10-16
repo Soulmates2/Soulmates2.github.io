@@ -1,8 +1,20 @@
 projects:
+  - title: "Score-based Point Cloud Denoising"
+    subtitle: "Reimplement the paper (DL)"
+    thumbnail: "assets/projects/2022_score-based_denoising/thumbnail.png"
+    url: "projects/2022_score-based-denoising.html"
+    selected: y
+
   - title: "Minimum"
     subtitle: "Weight management diary App (iOS)"
     thumbnail: "assets/projects/2021_minimum/thumbnail.png"
     url: "projects/2021_minimum.html"
+    selected: y
+  
+  - title: "CMTP"
+    subtitle: "Predict the trajectory of the vehicle using deep learning (DL)"
+    thumbnail: "assets/projects/2020_cmtp/thumbnail.png"
+    url: "projects/2020_cmtp.html"
     selected: y
 
   - title: "MAMAGO"
@@ -18,7 +30,7 @@ projects:
     selected: y
 
   - title: "Creating Song Lyrics System"
-    subtitle: "Using Char-RNN model (Tensorflow, Python)"
+    subtitle: "Using Char-RNN model (DL)"
     thumbnail: "assets/projects/no_image.png"
     url: "projects/2019_creating-song-lyrics.html"
     selected: n
