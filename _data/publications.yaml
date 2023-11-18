@@ -1,4 +1,16 @@
 papers:
+###################### APAP ######################
+  - title: "As-Plausible-As-Possible: Plausibility-Aware Mesh Deformation Using 2D Diffusion Priors"
+    shorts: "APAP"
+    authors: "<a href='https://dvelopery0115.github.io//'>Seungwoo Yoo<sup>‡</sup></a>, 
+              <b>Kunho Kim<sup>‡</sup></b>, 
+              <a href= 'http://www.vovakim.com/'>Vladimir G. Kim</a>, 
+              <a href='https://mhsung.github.io/'>Minhyuk Sung</a>"
+    venue: "Preprint, 2023</b>"
+    img: "assets/publications/APAP/teaser.png"
+    paper_pdf: "publications/APAP/static/APAP_main.pdf"
+    selected: y
+
 ###################### SyncDiffusion ######################
   - title: "SyncDiffusion: Coherent Montage via Synchronized Joint Diffusions"
     shorts: "SyncDiffusion"

@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Song Lyrics Creating System
-subtitle: "Using Char-RNN model (DL)"
+subtitle: "Using Char-RNN model (Deep Learning)"
 ---
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 

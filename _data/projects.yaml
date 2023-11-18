@@ -1,6 +1,6 @@
 projects:
   - title: "Score-based Point Cloud Denoising"
-    subtitle: "Reimplement the paper (DL)"
+    subtitle: "Reimplement the paper (Deep Learning)"
     thumbnail: "assets/projects/2022_score-based_denoising/thumbnail.png"
     url: "projects/2022_score-based-denoising.html"
     selected: y
@@ -12,7 +12,7 @@ projects:
     selected: y
   
   - title: "CMTP"
-    subtitle: "Predict the trajectory of the vehicle using deep learning (DL)"
+    subtitle: "Predict the trajectory of the vehicle using deep learning (Deep Learning)"
     thumbnail: "assets/projects/2020_cmtp/thumbnail.png"
     url: "projects/2020_cmtp.html"
     selected: y
@@ -30,7 +30,7 @@ projects:
     selected: y
 
   - title: "Creating Song Lyrics System"
-    subtitle: "Using Char-RNN model (DL)"
+    subtitle: "Using Char-RNN model (Deep Learning)"
     thumbnail: "assets/projects/no_image.png"
     url: "projects/2019_creating-song-lyrics.html"
     selected: n
