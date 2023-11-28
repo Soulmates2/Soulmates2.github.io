@@ -8,6 +8,7 @@ papers:
               <a href='https://mhsung.github.io/'>Minhyuk Sung</a>"
     venue: "Preprint, 2023</b>"
     img: "assets/publications/APAP/teaser.png"
+    project: "https://as-plausible-as-possible.github.io/"
     paper_pdf: "publications/APAP/static/APAP_arxiv.pdf"
     selected: y
 
