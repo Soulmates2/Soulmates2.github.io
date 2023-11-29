@@ -9,8 +9,17 @@ papers:
     venue: "Preprint, 2023</b>"
     img: "assets/publications/APAP/teaser.png"
     project: "https://as-plausible-as-possible.github.io/"
-    paper_pdf: "publications/APAP/static/APAP_arxiv.pdf"
+    paper_pdf: "https://arxiv.org/abs/2311.16739"
+    code: "https://github.com/KAIST-Geometric-AI-Group/APAP"
     selected: y
+    bib: "<br/>
+          @article{yoo2023apap,<br/>
+          title={As-Plausible-As-Possible: Plausibility-Aware Mesh Deformation Using 2D Diffusion Priors},<br/>
+          author={Seungwoo Yoo and Kunho Kim and Vladimir G. Kim and Minhyuk Sung},<br/>
+          eprint={2311.16739},,<br/>
+          archivePrefix={arXiv},<br/>
+          year={2023}<br/>
+        }"
 
 ###################### SyncDiffusion ######################
   - title: "SyncDiffusion: Coherent Montage via Synchronized Joint Diffusions"
