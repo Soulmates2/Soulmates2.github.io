@@ -6,19 +6,18 @@ papers:
               <b>Kunho Kim<sup>‡</sup></b>, 
               <a href= 'http://www.vovakim.com/'>Vladimir G. Kim</a>, 
               <a href='https://mhsung.github.io/'>Minhyuk Sung</a>"
-    venue: "Preprint, 2023</b>"
+    venue: "Conference on Computer Vision and Pattern Recognition Conference <b>(CVPR), 2024</b>"
     img: "assets/publications/APAP/teaser.png"
     project: "https://as-plausible-as-possible.github.io/"
     paper_pdf: "https://arxiv.org/abs/2311.16739"
     code: "https://github.com/KAIST-Geometric-AI-Group/APAP"
     selected: y
     bib: "<br/>
-          @article{yoo2023apap,<br/>
-          title={As-Plausible-As-Possible: Plausibility-Aware Mesh Deformation Using 2D Diffusion Priors},<br/>
+          @inproceedings{yoo2024apap,<br/>
+          title={{As-Plausible-As-Possible: Plausibility-Aware Mesh Deformation Using 2D Diffusion Priors}},<br/>
           author={Seungwoo Yoo and Kunho Kim and Vladimir G. Kim and Minhyuk Sung},<br/>
-          eprint={2311.16739},,<br/>
-          archivePrefix={arXiv},<br/>
-          year={2023}<br/>
+          booktitle={CVPR},<br/>
+          year={2024}<br/>
         }"
 
 ###################### SyncDiffusion ######################
@@ -36,7 +35,7 @@ papers:
     selected: y
     bib: "<br/>
           @inproceedings{lee2023syncdiffusion,<br/>
-          title={SyncDiffusion: Coherent Montage via Synchronized Joint Diffusions},<br/>
+          title={{SyncDiffusion: Coherent Montage via Synchronized Joint Diffusions}},<br/>
           author={Yuseung Lee and Kunho Kim and Hyunjin Kim and Minhyuk Sung},<br/>
           booktitle={NeurIPS},<br/>
           year={2023}<br/>

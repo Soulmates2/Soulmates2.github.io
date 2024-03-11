@@ -1,4 +1,13 @@
 news:
+  - date: "Mar 4. 2024"
+    content: "I start the new journey at the RebuilderAI as an AI researcher!"
+
+  - date: "Feb 28. 2024"
+    content: "APAP has been accepted to CVPR 2024."
+  
+  - date: "Feb 16. 2024"
+    content: "My Master's thesis has been awarded the outstanding thesis award!🎉"
+  
   - date: "Nov 27. 2023"
     content: "I have successfully defended my Master's thesis!🎓"
   
@@ -7,3 +16,6 @@ news:
     
   - date: "Sep 8. 2023"
     content: "OptCtrlPoints has been accepted to Pacific Graphics 2023 as a full paper."  
+
+  - date: "Feb 18. 2022"
+    content: "I received the outstanding leadership & service award!🎉"

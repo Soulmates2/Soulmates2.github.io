@@ -1,8 +1,14 @@
 experiences:
+- place: "RebuilderAI"
+  time: "Mar 2024 - now"
+  title: "AI Researcher"
+  subtitle: "Research on 3D reconstruction"
+  category: "work"
+
 - place: "KAIST"
-  time: "2022 - now"
+  time: "Mar 2022 - Feb 2024"
   title: "M.S. Student"
-  subtitle: "KAIST Geometric AI Lab <br> (Advisor: Minhyuk Sung)"
+  subtitle: "KAIST Visual AI Lab <br> (Advisor: Minhyuk Sung)"
   category: "school"
 
 - place: "Mathpang"
@@ -66,7 +72,7 @@ experiences:
   category: "school"
 
 - place: "KAIST"
-  time: "2017 - 2022"
+  time: "Mar 2017 - Feb 2022"
   title: "B.S. Student"
   subtitle: "Electronical Engineering & Computer Science"
   category: "school"
