@@ -1,8 +1,28 @@
 papers:
+###################### StyleMVD ######################
+  - title: "StyleMVD: Tuning-Free Image-Guided Texture Stylization by Synchronized Multi-View Diffusion"
+    shorts: "StyleMVD"
+    authors: "<b>Kunho Kim</b>, 
+              <a href='https://www.linkedin.com/in/sanghyeonan94/'>Sanghyeon An</a>, 
+              <a href='https://mhsung.github.io/'>Minhyuk Sung</a>"
+    venue: "Under review, 2024"
+    img: "assets/publications/StyleMVD/teaser.png"
+    project: "https://stylemvd.github.io/"
+    # paper_pdf: "https://arxiv.org/abs/2311.16739"
+    code: "https://github.com/StyleMVD/StyleMVD"
+    selected: y
+    # bib: "<br/>
+    #       @article{kim2024stylemvd,<br/>
+    #       title = {{StyleMVD: Tuning-Free Image-Guided Texture Stylization by Synchronized Multi-View Diffusion}},<br/>
+    #       author = {Kim, Kunho and An, Sanghyeon and Sung, Minhyuk},<br/>
+    #       journal = {arxiv preprint arXiv:2109.00000},<br/>
+    #       year = {2024}<br/>
+    #     }"
+
 ###################### APAP ######################
   - title: "As-Plausible-As-Possible: Plausibility-Aware Mesh Deformation Using 2D Diffusion Priors"
     shorts: "APAP"
-    authors: "<a href='https://dvelopery0115.github.io//'>Seungwoo Yoo<sup>‡</sup></a>, 
+    authors: "<a href='https://dvelopery0115.github.io/'>Seungwoo Yoo<sup>‡</sup></a>, 
               <b>Kunho Kim<sup>‡</sup></b>, 
               <a href= 'http://www.vovakim.com/'>Vladimir G. Kim</a>, 
               <a href='https://mhsung.github.io/'>Minhyuk Sung</a>"
