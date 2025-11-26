@@ -219,3 +219,14 @@ pre {
   margin-top: -4.5rem; /*same height as header*/
   visibility: hidden;
 }
+
+/*  ================ List styling  ================ */
+.docs-section ul {
+  margin-top: -2.5rem;
+  padding-top: -2.5rem;
+}
+
+.docs-section li {
+  margin-top: -1.0rem;
+  padding-top: -1.0rem;
+}

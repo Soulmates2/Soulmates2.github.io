@@ -1,8 +1,14 @@
 experiences:
-- place: "RebuilderAI"
-  time: "Mar 2024 - now"
+- place: "NC AI"
+  time: "Sep 2025 - now"
   title: "AI Researcher"
-  subtitle: "Research on 3D reconstruction"
+  subtitle: "Develop a VARCO Art Fashion"
+  category: "work"
+
+- place: "RebuilderAI"
+  time: "Mar 2024 - Sep 2025"
+  title: "AI Researcher"
+  subtitle: "Develop 2D/3D generative models"
   category: "work"
 
 - place: "KAIST"
