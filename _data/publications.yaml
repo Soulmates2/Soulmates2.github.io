@@ -9,7 +9,7 @@ papers:
     venue: "Conference on Neural Information Processing Systems <b>(NeurIPS), 2025</b>"
     img: "assets/publications/GOATex/teaser.png"
     project: "https://goatex3d.github.io/"
-    paper_pdf: "/publications/GOATex/static/GOATex_arxiv.pdf"
+    paper_pdf: "https://www.arxiv.org/abs/2511.23051"
     # code: "https://github.com/Soulmates2/GOATex"
     selected: y
     bib: "<br/>
