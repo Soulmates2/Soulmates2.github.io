@@ -1,9 +1,15 @@
 news:
+  - date: "Mar 27. 2025"
+    content: "EditCrafter has been accepted to CVPRW 2026."
+
   - date: "Sep 29. 2025"
     content: "I start the new journey at the NC AI as an AI researcher!"
   
   - date: "Sep 19. 2025"
     content: "GOATex has been accepted to NeurIPS 2025."
+
+  - date: "Aug 20. 2024"
+    content: "StyleMVD has been accepted to ECCVW 2024."
 
   # - date: "Mar 4. 2024"
   #   content: "I start the new journey at the RebuilderAI as an AI researcher!"

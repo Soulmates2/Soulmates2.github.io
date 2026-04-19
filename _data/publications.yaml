@@ -1,4 +1,26 @@
 papers:
+###################### EditCrafter ######################
+  - title: "EditCrafter: Tuning-free High-Resolution Image Editing via Pretrained Diffusion Model"
+    shorts: "EditCrafter"
+    authors: "<b>Kunho Kim</b>, 
+              <a href='https://soochem.github.io/'>Sumin Seo</a>,
+              <a href='https://yongjuncho.github.io/'>Yongjun Cho</a>,
+              <a href='https://hyungjinchung.github.io/'>Hyungjin Chung</a>"
+    venue: "IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshop <b>(CVPRW), 2026</b>"
+    img: "assets/publications/EditCrafter/teaser.png"
+    project: "https://editcrafter.github.io/"
+    paper_pdf: "https://www.arxiv.org/abs/2603.13663"
+    code: "https://github.com/EditCrafter/EditCrafter"
+    selected: y
+    bib: "<br/>
+          @inproceedings{<br/>
+          kim2026editcrafter,<br/>
+          title={{EditCrafter: Tuning-free High-Resolution Image Editing via Pretrained Diffusion Model}},<br/>
+          author={Kunho Kim and Sumin Seo and Yongjun Cho and Hyungjin Chung},<br/>
+          booktitle={CVPR 2nd Workshop on Human-Interactive Generation and Editing},<br/>
+          year={2026}<br/>
+        }"
+
 ###################### GOATex ######################
   - title: "GOATex: Geometry & Occlusion Aware Texturing"
     shorts: "GOATex"
@@ -26,7 +48,7 @@ papers:
     authors: "<b>Kunho Kim</b>, 
               <a href='https://www.linkedin.com/in/sanghyeonan94/'>Sanghyeon An</a>, 
               <a href='https://mhsung.github.io/'>Minhyuk Sung</a>"
-    venue: "ECCV 2024 CV4Metaverse Workshop (Accepted, but withdrawn)"
+    venue: "European Conference on Computer Vision Workshop <b>(ECCVW), 2024</b> (Accepted, but withdrawn)"
     img: "assets/publications/StyleMVD/teaser.png"
     # project: "https://stylemvd.github.io/"
     # paper_pdf: "https://arxiv.org/abs/2311.16739"
@@ -47,7 +69,7 @@ papers:
               <b>Kunho Kim<sup>‡</sup></b>, 
               <a href='http://www.vovakim.com/'>Vladimir G. Kim</a>, 
               <a href='https://mhsung.github.io/'>Minhyuk Sung</a>"
-    venue: "Conference on Computer Vision and Pattern Recognition Conference <b>(CVPR), 2024</b>"
+    venue: "IEEE/CVF Conference on Computer Vision and Pattern Recognition <b>(CVPR), 2024</b>"
     img: "assets/publications/APAP/teaser.png"
     project: "https://as-plausible-as-possible.github.io/"
     paper_pdf: "https://arxiv.org/abs/2311.16739"

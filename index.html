@@ -28,7 +28,7 @@ title: Home
 <div class="docs-section" id="news">
   <h4>News</h4>
   <!-- <p> Scroll for older news </p> -->
-  <UL style="list-style-type: none; padding: 2px; overflow-y: scroll; height:100px;">
+  <UL style="list-style-type: none; padding-top: 10px; overflow-y: scroll; height:100px;">
     {% for news in site.data.news.news %}
     <li> [{{ news.date }}] {{ news.content }}
     </li>
@@ -302,16 +302,17 @@ title: Home
 <div class="docs-section">
   <h4>Academic Services</h4>
   <p>Conference Reviewer:</p>
-  <ul>
-    <li>NeurIPS 2024 - 2025</li>
+  <ul id="reviewer">
+    <li>NeurIPS 2024 - 2026</li>
     <li>ICLR 2025 - 2026</li>
     <li>ICML 2025</li>
     <li>SIGGRAPH Asia 2025</li>
     <li>AAAI 2026</li>
+    <li>ECCV 2026</li>
   </ul>
 
   <p>Workshop Reviewer:</p>
-  <ul>
+  <ul id="reviewer">
     <li>CVPR 2025 Multimodal Learning and Applications</li>
   </ul>
   

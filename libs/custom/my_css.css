@@ -221,9 +221,8 @@ pre {
 }
 
 /*  ================ List styling  ================ */
-.docs-section ul {
+#reviewer {
   margin-top: -2.5rem;
-  padding-top: -2.5rem;
 }
 
 .docs-section li {
